@@ -2,9 +2,9 @@ SHELL=/bin/bash
 CDK_DIR=infrastructure
 COMPOSE_RUN = docker-compose run --user ${UID}:${GID} --rm base
 COMPOSE_RUN_WITH_PORTS = docker-compose run -d --name base --service-ports --rm base
-COMPOSE_UP_FULL_STACK = docker-compose up frontend dynamodb sam
+COMPOSE_UP_FULL_STACK = docker-compose up frontend
 COMPOSE_RUN_PLAYWRIGHT = docker-compose run --rm playwright
-PROFILE = --profile farm
+PROFILE = --profile personal
 REGION = --region us-east-1
 
 .DEFAULT_GOAL := help

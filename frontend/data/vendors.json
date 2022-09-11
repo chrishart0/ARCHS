@@ -1,0 +1,73 @@
+{
+  "vendors": {
+    "AdamsFarmAndGardens": {
+      "vendorAcronym": "AFG",
+      "vendorName": "Adam's Farm and Gardens",
+      "vendorProduct": ["Vegetables"],
+      "vendorDescription": "Adam’s Farm, located near Savannah, GA, is a small scale garden and greenhouse offering a variety of vegetables, herbs and fruits that are grown year round using sustainable and environmentally friendly agricultural practices. View our farm photos page to become familiar with us.",
+      "vendorWebsiteLink": "https://www.adamsfarmandgardens.com/",
+      "facebook": "https://www.facebook.com/adamsfarmandgardens/",
+      "vendorHeaderImageSrc": "https://images.squarespace-cdn.com/content/v1/53cea316e4b0fa81a69af3a6/1406055324683-2RYC2VRPJT3S7SC2J1B2/Sunflower.jpg?format=2500w",
+      "imagesList": [
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/53cea316e4b0fa81a69af3a6/1406502445667-3X0JUQJ2BL52QY9MO7A9/IMG_2668_zps8f7c9cd3.JPG?format=1500w",
+          "title": "Lettuce"
+        },
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/53cea316e4b0fa81a69af3a6/1407677079957-D4ZJAXSW9OM1HGR3FGFU/organic_tomatoes.jpg?format=1000w",
+          "title": "Tomatoes"
+        },
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/53cea316e4b0fa81a69af3a6/1407624747850-2ODBZCC37PBK3QH4Q99X/photo-43_zpsa55dad0e.JPG?format=1000w",
+          "title": "Flowers"
+        },
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/53cea316e4b0fa81a69af3a6/1407677104520-LKZ2UP95PUCR7TZNT4O5/IMG_0037_zpse5bf6846.JPG?format=1000w",
+          "title": "Field ready for planting"
+        },
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/53cea316e4b0fa81a69af3a6/1407632371326-MJMT4NPO179LU6FJF6IY/beans_zpsbdd01ea1.JPG?format=300w",
+          "title": "Plants"
+        }
+      ]
+    },
+    "3SistersFarm": {
+      "vendorAcronym": "3SF",
+      "vendorName": "3 Sisters Organic Farm",
+      "vendorPhoneNumber": "843-368-5828",
+      "vendorProduct": ["Vegetables", "Flowers"],
+      "vendorDescription": "There is a difference between organic and conventional food. It is not only what's in your food - it's what is NOT in your food. We strive to provide you with the best organic vegetables, herbs, and flowers that are good for body and soil.",
+      "vendorWebsiteLink": "https://www.3sistersorganicfarm.com/",
+      "vendorHeaderImageSrc": "https://images.squarespace-cdn.com/content/v1/5c6de41bd7819e06cae68149/1553033298421-UME1CLUKE34DGJX3AY2T/farm+aerial+march+2019+improved.jpg?format=1500w",
+      "imagesList": [
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/5c6de41bd7819e06cae68149/1552497225008-SQQPKF6DPDV1FZ911HVH/37224911_2012125525466609_7633697644379897856_n.jpg?format=750w",
+          "title": "Peppers"
+        },
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/5c6de41bd7819e06cae68149/1552497226229-WGPZMHBMCS8H9XS797JQ/43952841_2147788371900323_1182500020956430336_n.jpg?format=750w",
+          "title": "Flowers"
+        },
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/5c6de41bd7819e06cae68149/1552497229150-UM56VWJ2KKRLABE8ADBO/30052312_1905945486084614_427712492559973847_o.jpg?format=750w",
+          "title": "Strawberries"
+        }
+      ]
+    },
+    "BrantFamilyFarm": {
+      "vendorAcronym": "BFF",
+      "vendorEmail": "donsusanbrant@gmail.com",
+      "vendorName": "Brant Family Farm All Natural",
+      "vendorPhoneNumber": "(843) 726-9308",
+      "vendorProduct": ["Vegetables", "Fruits"],
+      "vendorDescription": "Committed to naturally grown, chemical free fruits and vegetables at reasonable prices! Email the Brants to preorder.",
+      "vendorHeaderImageSrc": "https://static.wixstatic.com/media/c4055e_7aa7e7053e634ee3969c02df26dafb79~mv2.jpg/v1/fill/w_306,h_227,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/brant%20don%20green.jpg",
+      "imagesList": [
+        {
+          "img": "https://lh-images.us-east-1.linodeobjects.com//30305.jpg",
+          "title": "Flier"
+        }
+      ]
+    }
+  }
+}

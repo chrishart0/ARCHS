@@ -1,6 +1,0 @@
-{
-    "Parameters": {
-      "AWSENV": "AWS_SAM_LOCAL",
-      "CORS_URL": "http://localhost:3000"
-    }
-  }

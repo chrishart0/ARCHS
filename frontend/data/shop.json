@@ -1,0 +1,16 @@
+{
+  "items": {
+    "book": {
+      "name": "Farmers Market Guide",
+      "imageSrc": "/images/book.webp",
+      "link": "https://www.amazon.com/Farmers-Markets-Guide-Business-Entrepreneurship/dp/0692512985/ref=sr_1_2?crid=2GRGS6BMUMW4A&keywords=farmers+market+book&qid=1651193512&sprefix=farmers+market+book%2Caps%2C120&sr=8-2",
+      "description": "Bill English uses his business and counseling experience to provide a guide of helpful hints for all farmer's market entrepeneuers, from the novice to the most experienced. This book is designed to empower the small business owner to increase their opportunity to succeed. "
+    },
+    "table": {
+      "name": "6-Foot Foldable Table",
+      "imageSrc": "https://m.media-amazon.com/images/I/61oRP6ONp3L._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/COSCO-Signature-Centerfold-Table-Gray/dp/B075VLKTQ3/ref=sr_1_5?crid=3FNI2IMF6VIJG&keywords=folding+table&qid=1651194394&sprefix=folding+table%2Caps%2C176&sr=8-5",
+      "description": "Every vendor needs a table. A strong, lightweight table for placing your products and banner to attract new customers. Easy setup, weather resistant, easy transport, compact storage, and incredibly lightweight. This is our recommended table."
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "markets": {
+    "helen-ga": {
+      "latitude": "34.701485",
+      "longitude": "-83.731567",
+      "marketName": "Downtown Helen, GA"
+    },
+    "ARCHS": {
+      "latitude": "34.70744297128564",
+      "longitude": "-83.71513997421366",
+      "marketName": "ARCHS"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "states": {
+    "south-carolina": {
+      "name": "South Carolina",
+      "regions": ["lowcountry"],
+      "flag": "/images/states/south-carolina.webp",
+      "description": "One of the original 13 colonies, South Carolina has always been known for its produce. You will find some wonderful farmers markets in the great palmetto state with some of the mot excellent fruits and vegetables to be had. South Carolina's dop agricultural products are chicken/eggs, corn, cotton, cattle, soybeans, peanuts, peaches, wheat, and turkey."
+    },
+    "georgia": {
+      "name": "Georgia",
+      "regions": ["colonial-coast", "north-georgia"],
+      "flag": "/images/states/Flag_of_Georgia.svg",
+      "description": "With a name like the Peach State, of course Georgia farmers markets are some of the best. From the coast, known for its berries and cotton, through middle Georgia with it's peaches, to the Northern Appalachian reaches know for their apples, wine, and chickens. Georgia's top produce are chicken, cotton, peanuts, and cattle/dairy, pecans, corn, and blueberries."
+    }
+  },
+  "regions": {
+    "lowcountry": {
+      "name": "Lowcountry",
+      "description": "The Lowcountry is a geographic and cultural region of South Carolina's coast, known for it's rich colonial and Antebellum history. "
+    },
+    "colonial-coast": {
+      "name": "Colonial Coast"
+    },
+    "north-georgia": {
+      "name": "North Georgia"
+    }
+  }
+}

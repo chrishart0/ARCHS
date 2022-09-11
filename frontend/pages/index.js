@@ -1,107 +1,154 @@
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 // MUI Components
 import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import Divider from "@mui/material/Divider";
 
 // Components
-import MarketCard from "../components/MarketCard";
 import SeoHeaderAndTracking from "../components/SeoHeaderAndTracking";
+import CabinCard from "../components/CabinCard";
 import LocationsMap from "../components/map";
 
-// Data
-import marketData from "../data/markets.json";
-import locationData from "../data/locations.json";
+// Assets
+import lodge55 from "../public/images/lodge-55-front.webp";
 
-const generateMarketCards = () => {
-  return Object.keys(marketData["markets"]).map((market) => {
-    return (
-      <MarketCard
-        key={market}
-        marketState={marketData["markets"][market]["state"]}
-        marketRegion={marketData["markets"][market]["region"]}
-        marketCity={marketData["markets"][market]["city"]}
-        marketPageLink={`/markets/${market}`}
-        marketName={marketData["markets"][market]["marketName"]}
-        marketExternalWebsiteLink={marketData["markets"][market]["marketWebsiteLink"]}
-        marketTimes={marketData["markets"][market]["marketTimes"]}
-        marketAddress={marketData["markets"][market]["marketAddressText"]}
-        marketImageSrc={marketData["markets"][market]["marketImageSrc"]}
-        marketDescription={marketData["markets"][market]["marketDescription"]}
-      />
-    );
-  });
+// Data
+import cabinData from "../data/cabins.json";
+
+// ------ Styles ------
+const headerBanner = {
+  minHeight: "70vh",
+  maxWidth: "100%",
+  width: "100vw",
+  bgcolor: "background.paper",
+  color: "white",
+  textShadow: "2px 2px 1px  #000",
+  borderTop: "1px solid #000",
+  borderBottom: "1px solid #000",
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url(${lodge55.src}) `,
+  backgroundPosition: "center",
+  backgroundRepeat: "noRepeat",
+  width: "100%",
+  backgroundSize: "cover",
+  p: 4,
+  overflowX: "hidden",
+  display: "flex",
+  paddingBottom: "1vh",
+  textAlign: "center",
+  fontFamily: 'Montserrat'
 };
 
-const generateLocations = () => {
-  return Object.keys(locationData["states"]).map((state) => {
+const h2Titles = {
+  fontSize: "2.5rem",
+  paddingTop: "1vh"
+};
+
+const generateCabinCards = () => {
+  return Object.keys(cabinData["cabins"]).map((cabins) => {
     return (
-      <Button key={state} variant="outlined" size="large" color="primary" sx={{ margin: "4vh" }}>
-        <Link href={`/locations/${state}`} passHref>
-          <Typography variant="h4" sx={{ fontSize: "1.5rem" }}>
-            {locationData["states"][state]["name"]}
-          </Typography>
-        </Link>
-      </Button>
+      <CabinCard
+        key={cabins}
+        name={cabinData["cabins"][cabins]["name"]}
+        link={cabinData["cabins"][cabins]["link"]}
+        rating={cabinData["cabins"][cabins]["rating"]}
+        marketAddress={cabinData["cabins"][cabins]["marketAddressText"]}
+        imageSrc={cabinData["cabins"][cabins]["imageSrc"]}
+        description={cabinData["cabins"][cabins]["description"]}
+      />
     );
   });
 };
 
 export default function Home() {
+
+  function InfoDisplaySection(props) {
+    return (
+      <Box backgroundColor={props.backgroundColor} sx={{ paddingBottom: "3vh", textAlign: "center" }}>
+        <Container>
+          <Typography variant="h2" sx={h2Titles}>{props.title}</Typography>
+          <Typography sx={{ fontSize: "1.1rem", paddingTop: "3vh", paddingBottom: "1vh" }}>{props.description}</Typography>
+          <img
+            src={props.image}
+            alt={props.imageAlt}
+            style={{ objectFit: "cover", width: "100%"}}
+          />
+          <Link href="tel:+6785083343" sx={{ textDecoration: "none", color: "inherit" }} passHref>
+            <Button variant="contained" sx={{ marginTop: "5px" }}>
+              Call or text to book:
+              (678)-508-3343
+            </Button>
+          </Link>
+        </Container>
+      </Box>
+    )
+  }
+
   return (
     <div>
       <SeoHeaderAndTracking
-        title="Farmers Market Finder"
-        description="Discover your closest farmers market fast! Find your favorite vendors and even find resources to start selling on your own!"
+        title="ARCHS - Alpine Rental Cabins and Hospitality Systems"
+        description="Discover your beautiful Helen Georgia Cabin, rent a golf cart, and schedule your boat tour today!"
         canonical="/"
       />
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <Container sx={{ paddingTop: "1vh" }} align="center" maxWidth="lg">
-            <Typography sx={{ paddingTop: "1vh", fontSize: "2.5rem" }} variant="h1">
-              Discover Your Farmers Markets
-            </Typography>
-            <Typography variant="h2" sx={{ fontSize: "1.5rem", paddingTop: "3vh" }}>Farmers Markets Map</Typography>
-            <Typography>Click a pin to see details on the farmers market</Typography>
-          </Container>
+      <div>
+        <main >
+          <Box sx={{fontFamily:'Montserrat'}}>
+            <Box sx={headerBanner} align="center" maxWidth="lg" disableGutters>
+              <Container sx={{ alignSelf: "flex-end" }} disableGutters>
+                <Typography fontWeight={600} sx={{ fontSize: "2.5rem" }} variant="h1">
+                  ARCHS
+                </Typography>
+                <Typography variant="h2" fontWeight={525} sx={{ fontSize: "1.5rem", paddingTop: "1vh" }}>Helen Georgia Rental Cabins and Adventures</Typography>
+              </Container>
+            </Box>
+            <Container sx={{ textAlign: "center", paddingBottom: "3vh", }} >
+              <Typography variant="h2" sx={h2Titles}>Incredible Cabins and Chateaus</Typography>
+              <Typography sx={{ fontSize: "1.1rem", paddingTop: "2vh" }}>From cozy mountain side cabins in alpine Helen to beautiful sea-side chateaus. </Typography>
+              <div style={{ alignContent: "center", paddingTop: "3vh" }}>
+                <Grid
+                  container
+                  sx={{ paddingBottom: "5px" }}
+                  spacing={2}
+                  direction="row"
+                  alignItems="center"
+                  justifyContent="center"
+                >
+                  {generateCabinCards()}
+                </Grid>
+              </div>
+            </Container>
+            <InfoDisplaySection
+              title="Glorious Golf Carts"
+              description="For our guests, we offer some of the best golf cart rental deals around. Ride around in style, get into town with your very own golf cart."
+              image="/images/golfcart.webp"
+              imageAlt="Helen Georgia Golf Cart Rental"
+              backgroundColor="WhiteSmoke"
+            />
+            <InfoDisplaySection
+              title="Wonderful Wine Tours"
+              description="Private wine tours can be provided for our guests. Experience a day of riding to the finest wineries North East Georgia has to offer with breaks at some of the scenic natural beauty."
+              image="/images/wine-tour-helen.webp"
+              imageAlt="Helen Georgia Wine Tours"
+              backgroundColor="default"
+            />
+            <InfoDisplaySection
+              title="Beautiful Boat Rides"
+              description="Catch a ride with your host on the boat. You and all your friends and family can have a relaxing afternoon out on the water."
+              image="/images/boat.webp"
+              imageAlt="Helen Georgia Boat Rides"
+              backgroundColor="WhiteSmoke"
+            />
+          </Box>
           <div style={{ width: "100vw" }}>
             <LocationsMap />
           </div>
-          <Container align="center" maxWidth="lg">
-            <Container sx={{ paddingTop: "5vh" }} align="center" maxWidth="lg">
-              <Divider />
-
-              <Typography variant="h2" sx={{ paddingTop: "3vh", fontSize: "1.5rem" }}>
-                Search Farmers Markets by State
-              </Typography>
-              {generateLocations()}
-              <Divider />
-            </Container>
-
-            <Typography variant="h2" sx={{ fontSize: "2.5rem", paddingTop: "5vh", paddingBottom: "1vh" }}>
-              All Farmers Markets
-            </Typography>
-            <Typography variant="h3" sx={{ fontSize: "1.5rem", padding: "1vh" }}>
-              Click on a Market
-            </Typography>
-            <Grid
-              container
-              sx={{ paddingBottom: "5px" }}
-              spacing={2}
-              direction="row"
-              alignItems="center"
-              justifyContent="center"
-            >
-              {generateMarketCards()}
-            </Grid>
-            <br />
-          </Container>
         </main>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
