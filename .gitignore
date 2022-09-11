@@ -1,0 +1,9 @@
+node_modules
+frontend/node_modules
+nohup.out
+watch.log
+configs.env
+coverage-reports
+./package.json
+.next
+cdk-outputs.json
