@@ -129,11 +129,11 @@ export default function Carts() {
                                     <Typography variant="h2" sx={h2Titles}>Top 5 Reasons Why Golf Cart Rentals Are So Popular?</Typography>
                                     <Divider sx={dividerCss} variant="insert" />
                                     <Typography sx={mainText}>Avoid the crowds and find easy parking </Typography>
-                                    <Typography sx={mainText}>You'll cruise the Helen, GA Innsbruck country club community in style with a golf cart rental from your friendly hosts at ARCHS. </Typography>
+                                    <Typography sx={mainText}>You&apos;ll cruise the Helen, GA Innsbruck country club community in style with a golf cart rental from your friendly hosts at ARCHS. </Typography>
                                     <Typography sx={mainText}>Feel the breeze in your hair as you cruise to downtown Helen, GA in about 5 minutes. </Typography>
                                     <Typography sx={mainText}>The over 50 restaurants in Helen, GA are within your reach!</Typography>
                                     <Typography sx={mainText}>Multiple waterfalls and swimming holes are withing your carting range.</Typography>
-                                    <Typography sx={mainText}>Carting to Octoberfest in your Lederhosen is the best way to get into beer drinking sprit (as long as you're not the DD.)</Typography>
+                                    <Typography sx={mainText}>Carting to Octoberfest in your Lederhosen is the best way to get into beer drinking sprit (as long as you&apos;re not the DD.)</Typography>
                                 </CardContent>
                             </Container>
                         </Box>
