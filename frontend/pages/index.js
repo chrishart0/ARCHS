@@ -77,7 +77,7 @@ function Item(props) {
       <div style={{ position: 'relative'}} >
         <Image
           src={props.item.image}
-          priority={true}
+          priority={false}
           layout="intrinsic"
           width={1634}
           height={763}
