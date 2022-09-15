@@ -10,9 +10,12 @@ import Button from "@mui/material/Button";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
+// MUI Icons
+import SportsBarIcon from '@mui/icons-material/SportsBar';
+
 // Components
 import SeoHeaderAndTracking from "../components/SeoHeaderAndTracking";
-import LocationsMap from "../components/map";
+import CallButton from "../components/CallButton";
 
 // Assets
 import lodge55 from "../public/images/lodge-55-front.webp";
@@ -109,39 +112,42 @@ export default function Carts() {
                                     <Typography variant="h2" sx={h2Titles}>ARCHS Golf Cart Rentals</Typography>
                                     <Divider sx={dividerCss} variant="insert" />
                                     <Typography variant="h3" sx={h3Titles}>ARCHS Golf Cart Rentals are THE most popular cart rentals for ARCHS guests.</Typography>
-                                    <Typography variant="h3" sx={mainText}>Convinience of a cart available right at your room, a great price, and ARCHS hospitality are why our golf cart rentals are the best option for you.</Typography>
-                                    <Typography variant="h2" sx={priceTitles}>Only $100/day!</Typography>
-                                    <Link href="tel:+6785083343" sx={{ textDecoration: "none", color: "inherit" }} passHref>
-                                        <Button variant="contained" sx={{ marginTop: "3vh" }}>
-                                            Call or text to reserve:
-                                            (678)-508-3343
-                                        </Button>
-                                    </Link>
+                                    <Typography variant="h3" sx={mainText}>The convenience of a cart available right at your room, a great price, and ARCHS hospitality are why our golf cart rentals are the best option for you.</Typography>
+                                    <Typography variant="h2" sx={priceTitles}>Call for some of the best deals on carts in Helen</Typography>
+                                    <CallButton/>
                                 </CardContent>
                             </Container>
                         </Box>
                     </Card>
-
+                    <Card sx={cards}>
+                        <Box sx={{ backgroundColor: "WhiteSmoke", padding: "3vh" }}>
+                            <Container sx={{ backgroundColor: "white" }} maxWidth="md">
+                                <CardContent>
+                                    <SportsBarIcon sx={{ height: "100px", width: "100%" }} />
+                                    <Typography variant="h2" sx={h2Titles}>Discount Beer With Your Cart Rental!</Typography>
+                                    <Divider sx={dividerCss} variant="insert" />
+                                    <Typography sx={mainText}>With every ARCHS cart rental, you will get discount beers at locations around Helen!</Typography>
+                                </CardContent>
+                            </Container>
+                        </Box>
+                    </Card>
                     <Card sx={cards}>
                         <Box sx={{ backgroundColor: "WhiteSmoke", padding: "3vh" }}>
                             <Container sx={{ backgroundColor: "white" }} maxWidth="md">
                                 <CardContent>
                                     <Typography variant="h2" sx={h2Titles}>Top 5 Reasons Why Golf Cart Rentals Are So Popular?</Typography>
                                     <Divider sx={dividerCss} variant="insert" />
-                                    <Typography sx={mainText}>Avoid the crowds and find easy parking </Typography>
+                                    <Typography sx={mainText}>Avoid the crowds and find easy parking.</Typography>
                                     <Typography sx={mainText}>You&apos;ll cruise the Helen, GA Innsbruck country club community in style with a golf cart rental from your friendly hosts at ARCHS. </Typography>
-                                    <Typography sx={mainText}>Feel the breeze in your hair as you cruise to downtown Helen, GA in about 5 minutes. </Typography>
+                                    <Typography sx={mainText}>Feel the breeze in your hair as you ride to downtown Helen, GA in about 5 minutes. </Typography>
                                     <Typography sx={mainText}>The over 50 restaurants in Helen, GA are within your reach!</Typography>
-                                    <Typography sx={mainText}>Multiple waterfalls and swimming holes are withing your carting range.</Typography>
-                                    <Typography sx={mainText}>Carting to Octoberfest in your Lederhosen is the best way to get into beer drinking sprit (as long as you&apos;re not the DD.)</Typography>
+                                    <Typography sx={mainText}>Multiple waterfalls and swimming holes are within your carting range.</Typography>
+                                    <Typography sx={mainText}>Carting to Octoberfest in your Lederhosen is the best way to get into beer-drinking sprit (as long as you&apos;re not the DD.)</Typography>
                                 </CardContent>
                             </Container>
                         </Box>
                     </Card>
                 </Box>
-                <div style={{ width: "100vw" }}>
-                    <LocationsMap />
-                </div>
             </Box>
         </div >
     );

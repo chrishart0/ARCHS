@@ -15,6 +15,14 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
+// Components
+import CallButton from "./CallButton";
+
+const titleButton = {
+  flexGrow: 1,
+  display: { xs: 'none', sm: 'block' }
+}
+
 const drawerWidth = 240;
 const navItems = [
   {
@@ -26,6 +34,8 @@ const navItems = [
     link: "/carts"
   }
 ];
+
+
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -70,18 +80,30 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            ARCHS
-          </Typography>
+          <Link href="/" passHref>
+            <Typography variant="h6" sx={{ my: 2 }}>
+              ARCHS
+            </Typography>
+          </Link>
+          <Link href="/" passHref>
+            <Button sx={titleButton}>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ color: '#fff' }}
+              >
+                ARCHS
+              </Typography>
+            </Button>
+          </Link>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            <CallButton size="sm" />
             {navItems.map((item) => (
-              <Button key={item.text} sx={{ color: '#fff' }}>
-                {item.text}
-              </Button>
+              <Link key={item.text} href={item.link} passHref>
+                <Button key={item.text} sx={{ color: '#fff' }}>
+                  {item.text}
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>

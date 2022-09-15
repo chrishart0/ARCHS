@@ -41,13 +41,7 @@ export default function CabinCard(props) {
               </Typography>
             </Button>
           </Link>
-          <Link href={props.link} passHref>
-            <Button size="medium" color="primary">
-              <Typography>
-                Read Reviews On AirBnB
-              </Typography>
-            </Button>
-          </Link>
+          
         </CardActions>
       </Card>
     </Grid>
