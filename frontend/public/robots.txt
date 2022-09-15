@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://thelocalegg.com
+Host: https://helenarchs.com
 
 # Sitemaps
-Sitemap: https://thelocalegg.com/sitemap.xml
+Sitemap: https://helenarchs.com/sitemap.xml

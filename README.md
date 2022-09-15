@@ -2,7 +2,7 @@
 
 [![CICD](https://github.com/chrishart0/farmersmarket-finder/actions/workflows/CICD.yml/badge.svg)](https://github.com/chrishart0/farmersmarket-finder/actions/workflows/CICD.yml)
 
-<thelocalegg.com>
+<https://helenarchs.com>
 
 Skips the reading and get right to the good stuff
 ## Why?

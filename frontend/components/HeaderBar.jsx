@@ -79,12 +79,12 @@ function DrawerAppBar(props) {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
+            <Link href="/" passHref>
+              <Typography variant="h6" sx={{ my: 2, ml: 2 }}>
+                ARCHS
+              </Typography>
+            </Link>
           </IconButton>
-          <Link href="/" passHref>
-            <Typography variant="h6" sx={{ my: 2 }}>
-              ARCHS
-            </Typography>
-          </Link>
           <Link href="/" passHref>
             <Button sx={titleButton}>
               <Typography

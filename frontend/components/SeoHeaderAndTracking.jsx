@@ -15,13 +15,13 @@ export default function SeoHeaderAndTracking(props) {
         <link rel="icon" type="image/png" href="/images/LocalEggLogo.svg" sizes="96x96" />
         <link rel="icon" type="image/png" href="/favicon.ico" sizes="32x32" />
         <link rel="icon" type="image/png" href="/images/LocalEggLogo.svg" sizes="128x128" />
-        <link rel="canonical" href={`/${domain}/${props.canonical}`} />
+        <link rel="canonical" href={`${domain}/${props.canonical}`} />
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
         {/* Facebook */}
         {/* https://ogp.me/#types */}
         <meta name="og:title" content={props.title} />
         <meta name="og:type" content="website" />
-        <meta name="og:url" content={`/${domain}/${props.canonical}`} />
+        <meta name="og:url" content={`${domain}/${props.canonical}`} />
         <meta name="og:image" content="/images/Localegg100x100.webp" />
         <meta name="og:site_name" content="ARCHS - Alpine Rental Cabins and Hospitality Systems" />
         <meta name="og:description" content={props.description} />
